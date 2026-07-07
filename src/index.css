@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: theme('colors.slate.950');
+    --color-surface: theme('colors.slate.900');
+    --color-border: theme('colors.slate.800');
+    --color-text: theme('colors.slate.100');
+    --color-muted: theme('colors.slate.400');
+    --color-accent: theme('colors.indigo.500');
+  }
+
+  * {
+    @apply border-slate-800;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20;
+  }
+
+  .section-label {
+    @apply text-xs font-mono uppercase tracking-widest text-indigo-400 mb-3;
+  }
+
+  .section-heading {
+    @apply text-3xl sm:text-4xl font-bold text-slate-100 mb-4;
+  }
+
+  .section-subheading {
+    @apply text-slate-400 text-lg max-w-2xl;
+  }
+
+  .card {
+    @apply bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-all duration-300 hover:border-indigo-500/50 hover:shadow-lg hover:shadow-indigo-500/10;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-slate-950;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 bg-transparent border border-slate-700 hover:border-indigo-500 text-slate-300 hover:text-indigo-400 font-semibold px-6 py-3 rounded-xl transition-all duration-200;
+  }
+
+  .tech-pill {
+    @apply inline-block text-xs font-mono bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg border border-slate-700;
+  }
+
+  .input-field {
+    @apply w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: theme('colors.slate.950');
+}
+::-webkit-scrollbar-thumb {
+  background: theme('colors.slate.700');
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.indigo.500');
+}
