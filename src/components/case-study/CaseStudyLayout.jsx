@@ -27,7 +27,7 @@ export default function CaseStudyLayout({
 }) {
   if (!project) return null
 
-  const { title, status, tags, stack, summary } = project
+  const { title, status, tags, stack, summary, liveUrl } = project
 
   return (
     <article className="pt-24 pb-20">
@@ -59,9 +59,23 @@ export default function CaseStudyLayout({
             {title}
           </h1>
 
-          <p className="text-xl text-slate-400 leading-relaxed">
+          <p className="text-xl text-slate-400 leading-relaxed mb-6">
             {summary}
           </p>
+
+          {liveUrl && (
+            
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
+            >
+              Visit Live Site
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          )}
         </header>
 
         {/* Divider */}

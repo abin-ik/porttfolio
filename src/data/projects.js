@@ -13,6 +13,7 @@ const projects = [
       "Wee Yes Shoppy — a production e-commerce platform for a real supermarket, live at weeyesshoppy.cloud, with an Android app on the Play Store, admin dashboard, payments, rewards, and a self-built AI image/data pipeline for 25,000+ products.",
     stack: ["Django", "Django REST Framework", "PostgreSQL", "Celery Beat", "Docker", "Nginx", "Next.js", "React Native (Expo)", "Firebase Auth", "Razorpay", "Qwen (local)"],
     thumbnail: "/images/projects/supermarket/thumb.png",
+    liveUrl: "https://www.weeyesshoppy.cloud/",
     featured: true,
   },
   {

@@ -7,7 +7,7 @@ import TechStackPill from './TechStackPill'
  * Accepts a `project` object from data/projects.js.
  */
 export default function ProjectCard({ project }) {
-  const { slug, title, status, tags, summary, stack, thumbnail } = project
+  const { slug, title, status, tags, summary, stack, thumbnail, liveUrl } = project
 
   return (
     <Link to={`/projects/${slug}`} className="card block group">
@@ -29,6 +29,18 @@ export default function ProjectCard({ project }) {
         <div className="absolute top-3 right-3">
           <StatusBadge status={status} />
         </div>
+        {/* Live site badge */}
+        {liveUrl && (
+          
+            href={liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="absolute top-3 left-3 flex items-center gap-1 text-xs font-medium text-white bg-emerald-600/90 hover:bg-emerald-500 px-2 py-0.5 rounded transition-colors"
+          >
+            Visit Live Site ↗
+          </a>
+        )}
       </div>
 
       {/* Body */}
