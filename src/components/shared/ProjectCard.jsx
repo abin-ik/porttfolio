@@ -31,7 +31,7 @@ export default function ProjectCard({ project }) {
         </div>
         {/* Live site badge */}
         {liveUrl && (
-          
+          <a
             href={liveUrl}
             target="_blank"
             rel="noopener noreferrer"

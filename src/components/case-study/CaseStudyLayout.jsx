@@ -64,7 +64,7 @@ export default function CaseStudyLayout({
           </p>
 
           {liveUrl && (
-            
+            <a
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
