@@ -2,24 +2,24 @@ import CTAButton from '../components/shared/CTAButton'
 
 const TIMELINE = [
   {
-    year: '2024–Present',
-    role: 'Freelance Full-Stack & AI/ML Developer',
-    desc: 'Building end-to-end AI-powered web applications for clients across e-commerce, logistics, and SaaS.',
+    year: '2022 – 2025',
+    role: 'Bachelor of Computer Applications (BCA), Kannur University',
+    desc: 'Studied at Depaul Arts & Science College, Edathotty, Kannur, while building production ML and full-stack systems alongside coursework.',
   },
   {
-    year: '2023',
-    role: 'AI Integration Lead',
-    desc: 'Led the AI/ML workstream for a supermarket platform — semantic search, product recommendations, and chatbot integration.',
+    year: '2025 ',
+    role: 'AI Engineer Intern, Tech By Heart Pvt. Ltd',
+    desc: 'Deployed an AI vs Real Image Detection system (CNN + ViT ensemble via FastAPI), built an AI-powered Resume Analyzer used in live recruitment workflows, and fine-tuned a DialoGPT-based AI chatbot.',
   },
   {
-    year: '2022',
-    role: 'Backend Developer',
-    desc: 'Designed and maintained Django REST APIs, Celery task queues, and PostgreSQL schemas for a high-traffic platform.',
+    year: '2025',
+    role: 'E-Commerce Platform for Supermarket — Full-Stack + AI Automation',
+    desc: 'Built a production Amazon-style supermarket platform handling 25,000+ products, with a large-scale AI-powered image scraping/background-removal pipeline, an automated database sync agent, and n8n workflow orchestration.',
   },
   {
-    year: '2021',
-    role: 'Self-Directed Learning',
-    desc: 'Deep-dived into machine learning fundamentals — built neural networks from scratch, trained CNN models, and explored NLP.',
+    year: 'Ongoing',
+    role: 'Neural Networks From First Principles',
+    desc: 'Deepening foundations in neural network mathematics — implementing forward and back-propagation from scratch in NumPy.',
   },
 ]
 
@@ -39,14 +39,27 @@ export default function About() {
           <p className="section-label">About Me</p>
           <h1 className="section-heading">Full-Stack &amp; AI/ML Developer</h1>
           <p className="text-slate-400 text-lg leading-relaxed mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. I'm a developer who sits at
-            the intersection of software engineering and machine intelligence — comfortable
-            building production backends, training custom models, and shipping polished user interfaces.
+            I'm an AI Engineer and Full-Stack Developer who enjoys building real-world software
+            that solves business problems. My work spans artificial intelligence, backend systems,
+            mobile applications, web development, automation, and cloud deployment.
+          </p>
+          <p className="text-slate-400 text-lg leading-relaxed mb-6">
+            I have built and deployed a production supermarket platform featuring Android and web
+            applications, an admin dashboard, inventory and order management, payment integration,
+            AI-powered shopping assistance, and intelligent automation. The platform supports more
+            than 25,000 products and is actively used by a real business.
+          </p>
+          <p className="text-slate-400 text-lg leading-relaxed mb-6">
+            Beyond full-stack development, I build AI solutions including semantic search systems,
+            vector-based retrieval, custom convolutional neural networks, neural networks from
+            scratch, and workflow automation using modern AI tools. I enjoy understanding how AI
+            works at a fundamental level, from mathematical concepts like derivatives and
+            backpropagation to deploying AI applications in production.
           </p>
           <p className="text-slate-400 text-lg leading-relaxed">
-            My work spans Django/FastAPI backends, PyTorch CNN models, LangChain RAG pipelines,
-            and React frontends. I care about code that scales, systems that are observable,
-            and products that genuinely solve problems.
+            My goal is to create practical AI products that make businesses more efficient through
+            intelligent automation and scalable software. I'm always exploring new technologies,
+            solving challenging engineering problems, and building systems that have a real impact.
           </p>
         </div>
 
