@@ -8,10 +8,10 @@ const projects = [
     slug: "supermarket-platform",
     title: "AI-Powered Supermarket Platform",
     status: "Live",
-    tags: ["E-commerce", "AI/ML", "Backend"],
+    tags: ["E-commerce", "Full-Stack", "Mobile", "Automation"],
     summary:
-      "A full-stack supermarket platform with AI-driven product recommendations, semantic search, and automated inventory management.",
-    stack: ["Django", "FastAPI", "Docker", "Nginx", "Sentence-Transformers", "PostgreSQL", "Redis"],
+      "Wee Yes Shoppy — a production e-commerce platform for a real supermarket, live at weeyesshoppy.cloud, with an Android app on the Play Store, admin dashboard, payments, rewards, and a self-built AI image/data pipeline for 25,000+ products.",
+    stack: ["Django", "Django REST Framework", "PostgreSQL", "Celery Beat", "Docker", "Nginx", "Next.js", "React Native (Expo)", "Firebase Auth", "Razorpay", "Qwen (local)"],
     thumbnail: "/images/projects/supermarket/thumb.png",
     featured: true,
   },
